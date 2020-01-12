@@ -9,7 +9,7 @@
 	tqdm
 
 ## Folders:
-	data: Contains the three dataset as mentioned.
+	data: Contains the set of three dataset as mentioned.
 	files: Contains the csv file and weight file generated during training.
 	new_data: Contains two subfolder `images` and `masks`, they contains the augmented images and masks.
 
