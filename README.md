@@ -1,2 +1,29 @@
-# ResUNet-An-Advanced-Architecture-for-Medical-Image-Segmentation
-Accurate computer-aided polyp detection and segmentation during colonoscopy examinations can help endoscopists resect abnormal tissue and thereby decrease chances of polyps growing into cancer. Towards developing a fully automated model for pixel-wise polyp segmentation, we propose ResUNet++, which is an improved ResUNet architecture for colonoscopic image segmentation. Our experimental evaluations show that the suggested architecture produces good segmentation results on publicly available datasets. Furthermore, ResUNet++ significantly outperforms U-Net and ResUNet, two key state-of-the-art deep learning architectures, by achieving high evaluation scores with a dice coefficient of 81.33%, and a mean Intersection over Union (mIoU) of 79.27% for the Kvasir-SEG dataset and a dice coefficient of 79.55%, and a mIoU of 79.62% with CVC-612 dataset.
+# Unet model build using Keras TensorFlow
+
+## Requirements:
+	os
+	numpy
+	cv2
+	tensorflow
+	glob
+	tqdm
+
+## Folders:
+	data: Contains the three dataset as mention.
+	files: Contains the csv file and weight file generated during training.
+	new_data:	Contains two subfolder `images` and `masks`, they contains the
+						augmented images and masks.
+
+## Files:
+	1.	process_image.py: Augment the images and mask for the training dataset.
+	2.	data_generator.py: Dataset generator for the keras.
+	3.	infer.py: Run your model on test dataset and all the result are saved in the
+	 							`result` folder. The images are in the sequence: Image,
+								Ground Truth Mask, Predicted Mask.
+	4.	run.py:	Train the unet.
+	5.	unet.py:	Contains the code for building the Unet architecture.
+
+First check for the correct path and the patameters.
+1.	$ python3 process_image.py	- to augment training dataset.
+2.	$	python3 run.py	-	to train the model.
+3.	$	python3 infer.py	- to test and generate the mask.
