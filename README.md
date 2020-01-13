@@ -24,7 +24,7 @@
 	8. mertrics.py: Contains the code for dice coefficient metric and dice coefficient loss. 
 
 
-First check for the correct path and the patameters.
-1.	$ python3 process_image.py - to augment training dataset.
-2.	$ python3 run.py - to train the model.
-3.	$ python3 infer.py - to test and generate the mask.
+## First check for the correct path and the patameters.
+1.	python3 process_image.py - to augment training dataset.
+2.	python3 run.py - to train the model.
+3.	python3 infer.py - to test and generate the mask.
