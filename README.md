@@ -4,7 +4,7 @@ The ResUNet++ architecture is based on the Deep Residual U-Net (ResUNet), which 
 More description about the archicture can be in the paper [ResUNet++: An Advanced Architecture for Medical Image Segmentation] (https://arxiv.org/pdf/1911.07067.pdf).
 
 ## Architecture
-<img src="img/DoubleU-Net.png">
+<img src="Resunet++.png">
 
 # ResUNet++ model in Keras TensorFlow
 ## Requirements:
@@ -39,9 +39,7 @@ More description about the archicture can be in the paper [ResUNet++: An Advance
 
 ## Results
 The model is trained on CVC-ClinicDB and tested on the ETIS-Larib polyps dataset. <br/>
-<img src="img/100.png">
-<img src="img/5.png">
-<img src="img/6.png">
+<img src="results.png">
 
 
 ## Citation
