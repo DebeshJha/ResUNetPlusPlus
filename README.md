@@ -39,7 +39,8 @@ More description about the archicture can be in the paper [ResUNet++: An Advance
 
 
 ## Results
- Qualitative results comparison on the Kvasir-SEG dataset. <br/>
+ Qualitative results comparison on the Kvasir-SEG dataset.From the left: image (1), (2) Ground truth, (3) U-Net, (4)
+ResUNet, (5) ResUNet-mod, and (6) ResUNet++. <br/>
 <img src="results.png">
 
 
