@@ -39,7 +39,7 @@ More description about the archicture can be in the paper [ResUNet++: An Advance
 
 
 ## Results
-The model is trained on CVC-ClinicDB and tested on the ETIS-Larib polyps dataset. <br/>
+ Qualitative results comparison on the Kvasir-SEG dataset. <br/>
 <img src="results.png">
 
 
