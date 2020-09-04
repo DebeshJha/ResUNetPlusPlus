@@ -3,6 +3,9 @@
 The ResUNet++ architecture is based on the Deep Residual U-Net (ResUNet), which is an architecture that uses the strength of deep residual learning and U-Net. The proposed ResUNet++ architecture takes advantage of the residual blocks, the squeeze and excitation block, ASPP, and the attention block. 
 More description about the archicture can be in the paper [ResUNet++: An Advanced Architecture for Medical Image Segmentation] (https://arxiv.org/pdf/1911.07067.pdf).
 
+## Architecture
+<img src="img/DoubleU-Net.png">
+
 # ResUNet++ model in Keras TensorFlow
 ## Requirements:
 	os
@@ -32,6 +35,14 @@ More description about the archicture can be in the paper [ResUNet++: An Advance
 1.	python3 process_image.py - to augment training dataset.
 2.	python3 run.py - to train the model.
 3.	python3 infer.py - to test and generate the mask.
+
+
+## Results
+The model is trained on CVC-ClinicDB and tested on the ETIS-Larib polyps dataset. <br/>
+<img src="img/100.png">
+<img src="img/5.png">
+<img src="img/6.png">
+
 
 ## Citation
 Please cite our paper if you find the work useful: 
