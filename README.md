@@ -52,7 +52,7 @@ Please cite our paper if you find the work useful:
   booktitle={2019 IEEE International Symposium on Multimedia (ISM)}, 
   title={ResUNet++: An Advanced Architecture for Medical Image Segmentation}, 
   year={2019},
-  pages={225-255}}
+  pages={225-230}}
 </pre>
 
 ## Contact
