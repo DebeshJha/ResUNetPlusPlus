@@ -1,5 +1,5 @@
 
-# ResUNet++ model in Keras TensorFlow
+# Resunet++: An advanced architecture for medical image segmentation
 # ResUNet++
 
 The ResUNet++ architecture is based on the Deep Residual U-Net (ResUNet), which is an architecture that uses the strength of deep residual learning and U-Net. The proposed ResUNet++ architecture takes advantage of the residual blocks, the squeeze and excitation block, ASPP, and the attention block. 
