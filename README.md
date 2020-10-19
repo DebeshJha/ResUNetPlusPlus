@@ -37,6 +37,9 @@ More description about the archicture can be in the paper [ResUNet++: An Advance
 2.	python3 run.py - to train the model.
 3.	python3 infer.py - to test and generate the mask.
 
+## Pytorch implementation of ResUNet++ can be found here : 
+https://github.com/rishikksh20/ResUnet/blob/master/core/res_unet_plus.py
+
 
 ## Results
  Qualitative results comparison on the Kvasir-SEG dataset.From the left: image (1), (2) Ground truth, (3) U-Net, (4)
