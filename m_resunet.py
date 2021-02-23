@@ -1,5 +1,5 @@
 """
-ResUNet architecture in Keras TensorFlow
+ResUNet++ architecture in Keras TensorFlow
 """
 import os
 import numpy as np
