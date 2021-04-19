@@ -12,7 +12,7 @@ from tensorflow.keras.models import Model
 def squeeze_excite_block(inputs, ratio=8):
     init = inputs
     channel_axis = -1
-    filters = init.shape[channel_axis].value
+    filters = init.shape[channel_axis]
     se_shape = (1, 1, filters)
 
     se = GlobalAveragePooling2D()(init)
@@ -64,20 +64,20 @@ def resnet_block(x, n_filter, strides=1):
     return x
 
 def aspp_block(x, num_filters, rate_scale=1):
-    x1 = Conv2D(num_filters, (3, 3), dilation_rate=(6 * rate_scale, 6 * rate_scale), padding="SAME")(x)
+    x1 = Conv2D(num_filters, (3, 3), dilation_rate=(6 * rate_scale, 6 * rate_scale), padding="same")(x)
     x1 = BatchNormalization()(x1)
 
-    x2 = Conv2D(num_filters, (3, 3), dilation_rate=(12 * rate_scale, 12 * rate_scale), padding="SAME")(x)
+    x2 = Conv2D(num_filters, (3, 3), dilation_rate=(12 * rate_scale, 12 * rate_scale), padding="same")(x)
     x2 = BatchNormalization()(x2)
 
-    x3 = Conv2D(num_filters, (3, 3), dilation_rate=(18 * rate_scale, 18 * rate_scale), padding="SAME")(x)
+    x3 = Conv2D(num_filters, (3, 3), dilation_rate=(18 * rate_scale, 18 * rate_scale), padding="same")(x)
     x3 = BatchNormalization()(x3)
 
-    x4 = Conv2D(num_filters, (3, 3), padding="SAME")(x)
+    x4 = Conv2D(num_filters, (3, 3), padding="same")(x)
     x4 = BatchNormalization()(x4)
 
     y = Add()([x1, x2, x3, x4])
-    y = Conv2D(num_filters, (1, 1), padding="SAME")(y)
+    y = Conv2D(num_filters, (1, 1), padding="same")(y)
     return y
 
 def attetion_block(g, x):
@@ -86,23 +86,23 @@ def attetion_block(g, x):
         x: Output of Previous Decoder block
     """
 
-    filters = x.shape[-1].value
+    filters = x.shape[-1]
 
     g_conv = BatchNormalization()(g)
     g_conv = Activation("relu")(g_conv)
-    g_conv = Conv2D(filters, (3, 3), padding="SAME")(g_conv)
+    g_conv = Conv2D(filters, (3, 3), padding="same")(g_conv)
 
     g_pool = MaxPooling2D(pool_size=(2, 2), strides=(2, 2))(g_conv)
 
     x_conv = BatchNormalization()(x)
     x_conv = Activation("relu")(x_conv)
-    x_conv = Conv2D(filters, (3, 3), padding="SAME")(x_conv)
+    x_conv = Conv2D(filters, (3, 3), padding="same")(x_conv)
 
     gc_sum = Add()([g_pool, x_conv])
 
     gc_conv = BatchNormalization()(gc_sum)
     gc_conv = Activation("relu")(gc_conv)
-    gc_conv = Conv2D(filters, (3, 3), padding="SAME")(gc_conv)
+    gc_conv = Conv2D(filters, (3, 3), padding="same")(gc_conv)
 
     gc_mul = Multiply()([gc_conv, x])
     return gc_mul
