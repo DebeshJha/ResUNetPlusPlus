@@ -70,7 +70,7 @@ if __name__ == "__main__":
 
     optimizer = Nadam(lr)
     metrics = [Recall(), Precision(), dice_coef, MeanIoU(num_classes=2)]
-    model.compile(loss="dice_loss", optimizer=optimizer, metrics=metrics)
+    model.compile(loss=dice_loss, optimizer=optimizer, metrics=metrics)
 
     csv_logger = CSVLogger(f"{file_path}unet_{batch_size}.csv", append=False)
     checkpoint = ModelCheckpoint(model_path, verbose=1, save_best_only=True)
