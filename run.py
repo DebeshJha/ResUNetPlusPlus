@@ -57,8 +57,8 @@ if __name__ == "__main__":
     valid_gen = DataGen(image_size, valid_image_paths, valid_mask_paths, batch_size=batch_size)
 
     ## Unet
-    arch = Unet(input_size=image_size)
-    model = arch.build_model()
+    #arch = Unet(input_size=image_size)
+    #model = arch.build_model()
 
     ## ResUnet
     #arch = ResUnet(input_size=image_size)
