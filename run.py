@@ -47,7 +47,7 @@ if __name__ == "__main__":
     image_size = 256
     batch_size = 8
     lr = 1e-4
-    epochs = 3
+    epochs = 200
 
     train_steps = len(train_image_paths)//batch_size
     valid_steps = len(valid_image_paths)//batch_size
