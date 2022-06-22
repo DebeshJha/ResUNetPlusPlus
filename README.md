@@ -56,7 +56,7 @@ Please cite our paper if you find the work useful:
 <pre>
 @INPROCEEDINGS{8959021,
   author={D. {Jha} and P. H. {Smedsrud} and M. A. {Riegler} and D. {Johansen} and T. D. {Lange} and P. {Halvorsen} and H. {D. Johansen}},
-  booktitle={2019 IEEE International Symposium on Multimedia (ISM)}, 
+  booktitle={Proceedings of the IEEE International Symposium on Multimedia (ISM)}, 
   title={ResUNet++: An Advanced Architecture for Medical Image Segmentation}, 
   year={2019},
   pages={225-230}}
