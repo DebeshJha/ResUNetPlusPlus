@@ -1,13 +1,15 @@
 
 # ResUNet++: An advanced architecture for medical image segmentation
-Tensoflow implementation of resunet++
-# ResUNet++
+Tensoflow implementation of ResUNet++
 
+# ResUNet++
 The ResUNet++ architecture is based on the Deep Residual U-Net (ResUNet), which is an architecture that uses the strength of deep residual learning and U-Net. The proposed ResUNet++ architecture takes advantage of the residual blocks, the squeeze and excitation block, ASPP, and the attention block. 
 More description about the archicture can be in the paper [ResUNet++: An Advanced Architecture for Medical Image Segmentation] (https://arxiv.org/pdf/1911.07067.pdf).
 
 ## Architecture
+<p align="center">
 <img src="Resunet++.png">
+</p>
 
 ## Requirements:
 	os
@@ -42,14 +44,15 @@ More description about the archicture can be in the paper [ResUNet++: An Advance
 https://github.com/rishikksh20/ResUnet/blob/master/core/res_unet_plus.py
 
 ## Dataset Link
-[Kvasir-SEG] (https://datasets.simula.no/kvasir-seg/)
+[Kvasir-SEG](https://datasets.simula.no/kvasir-seg/)
 
 
 ## Results
  Qualitative results comparison on the Kvasir-SEG dataset.From the left: image (1), (2) Ground truth, (3) U-Net, (4)
 ResUNet, (5) ResUNet-mod, and (6) ResUNet++. <br/>
+<p align="center">
 <img src="results.png">
-
+</p>
 
 ## Citation
 Please cite our paper if you find the work useful: 
@@ -63,4 +66,4 @@ Please cite our paper if you find the work useful:
 </pre>
 
 ## Contact
-Please contact debesh@simula.no for any further questions.
+Please contact debesh.jha@northwestern.edu for any further questions.
